@@ -13,7 +13,7 @@ body{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: var(--color-light); */
-    background-image: url('https://4kwallpapers.com/images/wallpapers/pokeball-pikachu-3840x2160-20912.png');
+    background-image: url('https://30.pokemon.com/_images/global/header/header-lg-2x.webp');
     background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
     background-repeat: no-repeat; /* No repite la imagen */
     background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
@@ -23,9 +23,11 @@ body{
 
 h1{
  margin-top: 10px;
- color: var(--color-light);
+ margin-bottom: 24px;
+ color: black;
 }
 h4{
+    margin-top: 24px;
     color: black;
 }
 .enfo{
@@ -38,13 +40,10 @@ h4{
     justify-content: center;
 }
 .main-cont2{
-    height: 93vh;
     display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .card{
@@ -57,7 +56,9 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.17);
+}
+.card:hover{
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 1);
 }
 .card figure{
     display: flex;
