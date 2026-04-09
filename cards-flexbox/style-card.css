@@ -11,7 +11,13 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--color-light);
+    /* background-color: var(--color-light); */
+    background-image: url('https://4kwallpapers.com/images/wallpapers/pokeball-pikachu-3840x2160-20912.png');
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    background-position: center; /* Centra la imagen */
+    
 }
 .main-container{
     height: 100vh;
@@ -19,11 +25,21 @@ body{
     align-items: center;
     justify-content: center;
 }
+.main-cont2{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    align-content: center;
+}
 .card{
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 300px;
+    margin: 15px;
     /* text-align: center; */
     display: flex;
     flex-direction: column;
@@ -37,6 +53,9 @@ body{
 }
 .card-img{
     height: 128px;
+}
+.card a:hover{
+    background-color:#e6b800;
 }
 .card a{
     color: black;
