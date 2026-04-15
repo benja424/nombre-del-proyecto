@@ -34,6 +34,10 @@ header{
     justify-content: space-between;
     width: 100%;
 }
+.cont-logo{
+    display: flex;
+    flex-direction: row;
+}
 .logo{
     width: 32px;
     height: 32px;
@@ -83,12 +87,35 @@ header{
     background-color: var(--color-primary);
     margin-top: 15px;
 }
+caption{
+    font-weight: bold;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+table, th, td {
+    text-align: center;
+    background-color: var(--color-light);
+    color: black;
+    border: 1px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 5px;
+    border-collapse: separate;
+}
+table{
+    max-width: 600px;
+    height: auto;
+}
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 56px;
     margin-top: 12px;
+    margin-bottom: 12px;
     margin-left: 16px;
     margin-right: 16px;
     padding-left: 8px;
