@@ -1,0 +1,11 @@
+:root{
+    --color-primary: #ffcc00;
+    --color-dark: #333;
+    --color-light: #f4f4f4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para limpiar el formato por defecto de los navegadores */
+}
