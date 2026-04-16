@@ -1,46 +1,99 @@
-*{
+:root {
+    --color-primary: #ffcc00;
+    --color-dark: #333;
+    --color-dark-light: #444;
+    --color-light: #f4f4f4;
+}
+/* Para limpiar el formato por defecto de los navegadores */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para limpiar el formato por defecto de los navegadores */
 }
-:root{
-    --color-primary: #ffcc00;
-    --color-dark: #333;
-    --color-light: #f4f4f4;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-light);
+    height: 100vh;
 }
-.card{
+/* --- Estilos para agregar en clase 16/04 --- */
+header{
+    padding: 10px;
+}
+.navbar-left{
+    display: flex;
+    gap: 16px;
+}
+.navbar-left img{
+    border-radius: 12px;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: var(--color-dark);
+    width: 200px;
+    color: #ffffff;
+}
+.menu-item{
+    padding: 15px;
+    border-bottom: 1px solid var(--color-dark);
+}
+.menu-item:hover{
+    background-color: var(--color-dark-light);
+    cursor: pointer;
+}
+.menu-item:active{
+    background-color: var(--color-primary);
+    color: black;
+}
+.main-container{
+    flex: 1; /* hacemos que el contenedor ocupe todo el espacio disponible que puede ocupar del padre*/
+    padding: 20px;
+}
+.main-container h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: inherit;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+/* --- Estilos para agregar en clase 16/04 --- */
+.card {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
-    /* margin: 15px; */
-    /* text-align: center; */
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card:hover{
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 1);
-}
-.card figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card img{
+.card-img {
     height: 128px;
     width: 128px;
-
 }
-.card a:hover{
-    background-color:#e6b800;
-}
-.card a{
+.card a {
     color: black;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
     background-color: var(--color-primary);
     margin-top: 15px;
+}
+.card a:hover {
+    background-color: #e6b800;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
