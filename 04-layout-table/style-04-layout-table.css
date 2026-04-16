@@ -114,7 +114,9 @@ body {
     padding-top: 40px;
 }
 .table-container {
-    overflow-x: scroll;
+    overflow-x: scroll; 
+    /* Esto le agrega el scroll sin pasarle el contenido a todos los elementos de la 
+    tabla, por eso se pone en el elemento padre de la misma*/
 }
 table {
     width: 100%;
@@ -124,8 +126,13 @@ th {
     background-color: var(--color-dark);
     color: white;
 }
+/*
+1) pseudo clase selecciona un hijo en particular o un grupo
+2) pseudo clase que selecciona el primer hijo de la clase
+3) pseudo clase que selecciona el ultimo hijo de una clase
+*/
 /* tbody tr:nth-child(odd) { */
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even)/*Seleccion de zebra en una tabla*/ { 
     background-color: #bbb9;
 }
 th, td {
