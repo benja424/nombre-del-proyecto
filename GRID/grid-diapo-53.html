@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 200px 1fr; /*fr es una unidad especial en grid, significa fraccion*/
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            grid-template-areas: 
+                "header header"
+                "aside main"
+                "footer footer";
+        }
+        header {
+            background-color: #15857A;
+            color: white;
+            height: 64px;
+            grid-area: header;
+        }
+        main {
+            background-color: #F4F1E9;
+            grid-area: main;
+        }
+
+        aside {
+            background-color: #FF6A3B;
+            color: white;
+            grid-area: aside;
+        }
+        footer {
+            background-color: #15857A;
+            color: white;
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+
+    <main>
+        MAIN CONTENT
+    </main>
+
+    <aside>
+        SIDEBAR
+    </aside>
+
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>
