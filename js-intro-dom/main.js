@@ -18,7 +18,34 @@ de la variable en ese momento de la ejecucion */
 
 const parrafo = document.getElementById("txt");
 // parrafo.textContent = "Cambiando texto desde js"
+/* ----------------------------------------------------------- */
+var nombre = "Omar";
+console.log(nombre);
+var nombre = "Javier";
+console.log(nombre);
+let apellido = "Garrido";
+console.log(apellido);
+apellido = "Barrido";
+console.log(apellido);
+/*Forma de armar strings: */
+// console.log('Su nombre es #[nombre] y su apellido es #{apellido}');
 
+function saludar (nombre){
+    return `Hola ${nombre}`;
+}
+const saludo2 = (nombre) => {
+    return `Hola ${nombre}`;
+}
+console.log (saludar('Maria'));
+console.log (saludo2('Juan'));
+/* Objeto Literal */
+
+const pokemon = {
+    nombre: 'pikachu',
+    tipo: 'electrico'
+}
+console.log(pokemon.nombre);
+/* ----------------------------------------------------------- */
 const boton = document.getElementById ("btn");
 boton.addEventListener("click", () => {
     parrafo.textContent = "Cambiando texto desde js";  
