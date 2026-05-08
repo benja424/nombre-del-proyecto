@@ -1,0 +1,18 @@
+whoami: muestra quien sos.
+id: muestra a que grupos perteneces e info del usuario.
+dnf update: actualiza
+Systemctl stop sshd: detiene el servicio ssh
+Con sudo: funciona si sos un usuario con poderes de administrador
+
+Sin ser un random ni el jesucristo del sistema queremos tener pernmisos de administrador pero limitados
+- root y superusuario: jesucristo (hace todo)
+- usuario random: no puede hacer nada fuera de su home
+
+Archivo /etc/sudoers (NO editar a mano)
+sudoers: tiene/almacena los permisos de superusuarios y grupos. (Què pueden hacer y qué no)
+cuando se ve el: root ALL=(ALL) ALL
+- El primer ALL es Host: puede trabajar desde cualquier equipo.
+- El segundo ALL es por qué usuarios puede usar el su (loguearse por).
+- El tercer ALL son los comandos que puede usar como tal.
+(Los grupos se ven como %group)
+Ejemplo: pepe Almalinux=(root) [Lista de comandos].
