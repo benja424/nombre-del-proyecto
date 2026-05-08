@@ -16,3 +16,11 @@ cuando se ve el: root ALL=(ALL) ALL
 - El tercer ALL son los comandos que puede usar como tal.
 (Los grupos se ven como %group)
 Ejemplo: pepe Almalinux=(root) [Lista de comandos].
+
+Cada Comando en linux es un programa.
+which "comando": muestra donde se aloja el comando/ejecutable.
+Ejemplo: which dnf, which ls, etc.
+
+Cómo colocar la lista de comandos?
+- sudo visudo /etc/sudoers: Edita el archivo sudoers de forma segura.
+- 
