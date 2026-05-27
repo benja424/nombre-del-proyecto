@@ -35,3 +35,10 @@ card.appendChild(habilidades);
 // Agregar al DOM
 document.querySelector('#contenedor-pokemon').appendChild(card);
 
+function createCard (pokemon){
+    // crear card
+    const card = document.createElement('div');
+    card.classList.add('pokemon-card');
+    
+
+}
