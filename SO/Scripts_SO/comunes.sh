@@ -1,5 +1,6 @@
 #!/bin/bash
 ## En este script comunes puse cosas para utilizar funciones o bloques de codigo que se repiten en varios scripts
+
 mensajeError() {
     echo "[X] $1 [X]"
 }
